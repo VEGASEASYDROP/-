@@ -4,19 +4,39 @@
   <meta charset="UTF-8">
   <title>VEGAEASYDROP</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <h1>🎰 Gift Casino</h1>
     <p>Игровой Telegram-бот: крути кейсы, зарабатывай звёзды и прокачивай уровень!</p>
-    <a href="https://t.me/Имя_Твоего_Бота" class="start-btn">Запустить бота</a>
+
+    <a href="https://t.me/Vegaseasydroop" class="start-btn">Запустить бота</a>
 
     <div class="features">
-      <div class="card">🎁 Кейсы с наградами</div>
-      <div class="card">🪙 Монетка / 🎲 Кубик</div>
-      <div class="card">🔝 ТОП игроков</div>
-      <div class="card">👥 Приглашай друзей</div>
+      <div class="card" data-aos="fade-up">🎁 Кейсы с наградами</div>
+      <div class="card" data-aos="fade-left">🪙 Монетка / 🎲 Кубик</div>
+      <div class="card" data-aos="fade-right">🔝 ТОП игроков</div>
+      <div class="card" data-aos="fade-up">👥 Приглашай друзей</div>
     </div>
+
+    <h2 data-aos="fade-up" style="margin-top:40px;">🏆 ТОП игроков</h2>
+    <ul id="leaderboard" data-aos="fade-up">
+      <li>1. @Ivan - 5000 ⭐</li>
+      <li>2. @Masha - 4200 ⭐</li>
+      <li>3. @Sanya - 3500 ⭐</li>
+      <li>4. @Player1 - 3000 ⭐</li>
+      <li>5. @Guest - 2500 ⭐</li>
+    </ul>
   </div>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
+
