@@ -93,7 +93,7 @@
     const connectWalletBtn = document.getElementById('connectWalletBtn');
 
     // Стартовый баланс (пример)
-    let userStars = 100;
+    let userStars = 0;
 
     openCasesBtn.onclick = () => {
       mainPage.classList.add('hidden');
@@ -130,7 +130,7 @@
     }
 
     spinBtn.onclick = () => {
-      const casePrice = 50;
+      const casePrice = 69;
       if(userStars < casePrice) {
         resultDiv.textContent = "❌ Недостаточно звёзд, чтобы крутить кейс.";
         return;
