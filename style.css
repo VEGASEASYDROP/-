@@ -1,138 +1,153 @@
+/* style.css */
 body {
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background: #111;
+  background-color: #0d0d0d;
   color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #121212;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.balance {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.stars, .tickets {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#add-stars {
+  background: #007bff;
+  border: none;
+  color: white;
+  padding: 0 6px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.filter-btn {
+  background: #1a1a1a;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background: #333;
+}
+
+.case-section {
+  padding: 20px;
   text-align: center;
 }
-.container {
-  padding: 40px 20px;
-  max-width: 600px;
-  margin: auto;
+
+.cases {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-  color: #FFD700;
-}
-p {
-  font-size: 1.2em;
-  margin-bottom: 30px;
-}
-a, button {
-  cursor: pointer;
-  border: none;
-  border-radius: 10px;
-  padding: 15px 30px;
-  font-size: 1.2em;
-  transition: background 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
-  margin: 10px;
-}
-a.start-btn {
-  background: #FFD700;
-  color: #000;
-}
-a.start-btn:hover {
-  background: #f0c800;
-}
-button.case-btn {
-  background: #FFD700;
-  color: #000;
-}
-button.case-btn:hover {
-  background: #f0c800;
-}
-button.wallet-btn {
-  background: #1DB954;
-  color: #fff;
-}
-button.wallet-btn:hover {
-  background: #1ed760;
-}
-.features {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  margin-top: 40px;
-}
-.card {
-  background: #222;
-  padding: 20px;
+
+.case-card {
+  background: #1a1a1a;
+  padding: 15px;
   border-radius: 12px;
-  border: 1px solid #333;
+  width: 200px;
+  text-align: center;
 }
-#leaderboard {
-  list-style: none;
-  padding: 0;
-  font-size: 1.1em;
-  margin-top: 20px;
-  max-width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}
-#leaderboard li {
-  background: #1e1e1e;
-  padding: 10px;
+
+.case-card img {
+  width: 100%;
   border-radius: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #333;
 }
-.case-container {
+
+.open-btn {
+  margin-top: 10px;
+  background: #28a745;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #121212;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.bottom-nav button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+
+.bottom-nav .active {
+  color: #ffcc00;
+}
+
+.social-link {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  color: #00bfff;
+  text-decoration: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
   background: #222;
   padding: 20px;
-  border-radius: 15px;
-  border: 1px solid #333;
-  max-width: 600px;
-  margin: 40px auto;
+  border-radius: 8px;
+  text-align: center;
 }
-.gift-item {
-  display: inline-block;
-  margin: 15px;
-  padding: 10px;
-  border-radius: 10px;
-  background: #333;
-  width: 120px;
-  cursor: default;
-  transition: transform 0.2s ease;
+
+.modal-content input {
+  padding: 8px;
+  width: 80%;
+  margin-bottom: 10px;
 }
-.gift-item:hover {
-  transform: scale(1.1);
-  background: #444;
-}
-.gift-emoji {
-  font-size: 48px;
-}
-.gift-name {
-  margin-top: 10px;
-  font-weight: bold;
-  color: #FFD700;
-}
-.gift-price {
-  font-size: 0.9em;
-  color: #ccc;
-}
-#spinBtn {
-  margin-top: 30px;
-  padding: 15px 40px;
-  font-size: 1.4em;
-  background: #FFD700;
-  color: #000;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-#spinBtn:hover {
-  background: #f0c800;
-}
-#result {
-  margin-top: 30px;
-  font-size: 1.5em;
-  color: #FFD700;
-  min-height: 60px;
-}
-.hidden {
-  display: none;
+
+.modal-content button {
+  margin: 5px;
+  padding: 8px 12px;
 }
